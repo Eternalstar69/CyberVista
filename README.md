@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Hotel Reservation Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+Designed and developed a hotel reservation web application as part of a collaborative group project using **React** (frontend), **Node.js** (backend), **MySQL** (database), and **XAMPP server** for local deployment.
 
-## Available Scripts
+### Key Features:
+- **Hotel Booking System**: Users can search and book hotels with a user-friendly interface and real-time availability.
+- **Advanced Search Filters**: Enables users to filter hotel listings by price, amenities, and ratings.
+- **Email Confirmation System**: Automatically sends booking confirmation emails to users upon successful reservation.
 
-In the project directory, you can run:
+### Technologies Used:
+- **Frontend**: React, HTML, CSS
+- **Backend**: Node.js, MySQL
+- **Database**: MySQL
+- **Deployment**: XAMPP server for local deployment
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites:
+- **Node.js** (latest stable version)
+- **MySQL** database (set up locally or use a cloud service)
+- **XAMPP** server (for local deployment of MySQL)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Steps to Install Locally:
 
-### `npm test`
+1. **Clone the repository**:
+   git clone https://github.com/your-username/your-repository.git
+2. **Install Dependencies**:
+   - Navigate to the project folder:
+     cd your-repository
+   - Install the necessary dependencies (for both frontend and backend):
+     npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Set Up MySQL Database**:
+   - Make sure MySQL is running using **XAMPP** or your preferred MySQL server.
+   - Import the database schema from the project folder (usually located in a folder like `backend/database`).
+   - Configure the database connection settings in the backend (e.g., `database.js` or similar file).
 
-### `npm run build`
+4. **Start the Backend (Node.js + MySQL)**:
+   - Start the backend server:
+     node server.js
+5. **Start the Frontend (React)**:
+   - In a new terminal, run the frontend React app:
+     npm run client
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Notes:
+- The backend will run on its default port (usually **http://localhost:5000**).
+- If you encounter CORS issues, ensure that **CORS middleware** is configured in the backend, or set up the `proxy` in your React `package.json` file to forward API requests to the backend.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Usage
+- Visit **http://localhost:3000** to interact with the web application.
+- Users can search, book hotels, and receive confirmation emails.
